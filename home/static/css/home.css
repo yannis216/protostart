@@ -62,6 +62,7 @@ h3{
 
 
 .jumbo{
+  background-color: black;
     background: url("../pictures/protostar.jpg");
     height: 65vh;
     display:flex;
@@ -164,4 +165,42 @@ h3{
 .example_format{
   height:30vh;
   border-bottom: solid 1px grey;
+}
+
+.contact_container{
+  height: 100vh;
+  border-bottom: solid 1px grey;
+  background-color: #f8f8f8;
+}
+
+.contact_head{
+  text-align: center;
+  height: 10vh;
+}
+
+.contact_info{
+  height: 30vh;
+  margin-top: 5vh;
+}
+
+.glyphicon_contact{
+  font-size: 2.5em;
+}
+
+.phone_container{
+  margin-top: 2vh;
+  text-align: right;
+}
+
+.phone_numbers{
+  text-align: left;
+}
+
+.mail_container{
+  margin-top: 2vh;
+  text-align: right;
+}
+
+.mail_address{
+  text-align: left;
 }
