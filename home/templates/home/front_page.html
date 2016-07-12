@@ -1,0 +1,188 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Protostart</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  </head>
+  <body>
+<!-- Headline -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand brand" href="#">
+          <img class="text_logo" src="../../static/pictures/protostart_text_logo.png" alt="" />
+        </a>
+        <a class="impressum_link" href="impressum">
+          Impressum
+        </a>
+        <button type="button" class="btn start_now_button">Jetzt starten</button>
+
+      </div>
+    </div>
+  </nav>
+<!--Großes Bild -->
+  <div class="row">
+    <div class="col-md-12 jumbo">
+      <div class="col-md-4 col-md-offset-4 centered_vision">
+        <h1>Gemeinsam Innovationen Schaffen</h1>
+        <div class="h_line"></div>
+        <p class="vision_text">
+          Die Welt verändert sich schnell. Unternehmen, Institutionen und das Bildungssystem verändern sich viel langsamer. Das ändern wir zusammen.
+        </p>
+      </div>
+    </div>
+  </div>
+<!--drei kleine -->
+  <div class="row">
+    <div class="col-md-4 front_usergroup_link">
+      <div class="col-md-4 col-md-offset-4 link_content">
+        <h2>Unternehmen</h3>
+        <div class="h_line"></div>
+          Werden Sie innovativer (oder sowas)
+      </div>
+    </div>
+    <div class="col-md-4 front_usergroup_link" >
+        <div class="col-md-4 col-md-offset-4 link_content">
+          <h2>Studenten</h3>
+          <div class="h_line"></div>
+            Werden Sie innovativer (oder sowas)
+        </div>
+    </div>
+    <div class="col-md-4 front_usergroup_link">
+        <div class="col-md-4 col-md-offset-4 link_content">
+          <h2>Institutionen/Hochschulen</h3>
+          <div class="h_line"></div>
+          Werden Sie innovativer (oder sowas)
+        </div>
+    </div>
+  </div>
+
+<!--Anfang wie machen wir das -->
+<div class="row end_of_how">
+  <div class="col-md-12 how_container">
+    <div class="row">
+<!-- Wie? Überschrift -->
+      <div class="col-md-12 how_question">
+        <h2>Wie schaffen wir Innovationen?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-1 sub_how_container">
+        <div class="row">
+          <div class="col-md-12 how_sub_head">
+            <h3>Kreativität</h3>
+          </div>
+        </div>
+<!-- Einzelne Kreativität Unterpunkte -->
+        <div class="row">
+          <div class="col-md-3 how_sub_picture">
+            Kreativität1 Bild
+          </div>
+          <div class="col-md-9 how_sub_content">
+            Kreativität 1 Content
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1 how_sub_picture">
+            Kreativität2 Bild
+          </div>
+          <div class="col-md-8 how_sub_content">
+            Kreativität 2 Content
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-2 how_sub_picture">
+            Kreativität3 Bild
+          </div>
+          <div class="col-md-7 how_sub_content">
+            Kreativität 3 Content
+          </div>
+        </div>
+<!-- Anfang Plus Container -->
+      </div>
+      <div class="col-md-2 plus_container">
+        +
+      </div>
+<!-- Anfang Kollaboration Container -->
+      <div class="col-md-4 sub_how_container">
+        <div class="row">
+          <div class="col-md-12 how_sub_head">
+            <h3>Kollaboration</h3>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-md-9 how_sub_content">
+          Kollaboration1 Content
+        </div>
+        <div class="col-md-3 how_sub_picture">
+          Kollab1 Bild
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 how_sub_content">
+          Kollab2 Content
+        </div>
+        <div class="col-md-3 how_sub_picture">
+          Kollab2 Bild
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7 how_sub_content">
+          Kollab3 Content
+        </div>
+        <div class="col-md-3 how_sub_picture">
+          Kollab3 Bild
+        </div>
+      </div>
+    </div>
+<!-- Start Innovation Container -->
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 innovation_container">
+        <div class="col-md-6 col-md-offset-3 link_content">
+          <h2>Innovation</h3>
+          <div class="h_line"></div>
+          Wir verstehen Innovation als Mindset. Ergebnis sind nicht nur innovative Produkt- Dienstleistungs und Prozesslösungen sondern eine völlig neue Arbeitskultur.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Anfang Was genau machen wir -->
+<div class="row">
+  <div class="col-md-12 what_container">
+<!-- Anfang Beispielhafte Formate -->
+    <div class="row">
+      <div class="col-md-12 example_head">
+        <h2>Beispielhafte Formate</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 example_format">
+          Beispiel1
+        </div>
+        <div class="col-md-4 example_format">
+          Beispiel 2
+        </div>
+        <div class="col-md-4 example_format">
+          Beispiel 3
+        </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
