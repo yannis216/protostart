@@ -156,12 +156,12 @@ a.vision_link:hover{
   }
     .how_sub_picture{
       height: 15vh;
-      background-color: green;
+
     }
 
     .how_sub_content{
       height: 15vh;
-      background-color: red;
+      
     }
 
   .innovation_container{
@@ -253,4 +253,9 @@ a.vision_link:hover{
 
 .yannis_content{
   text-align: right;
+}
+
+
+.impressum_container{
+
 }
