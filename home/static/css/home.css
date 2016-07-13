@@ -12,8 +12,16 @@ a:hover{
   color:black;
 }
 
+a:visited{
+  color:grey;
+}
+a:active{
+ color:grey;
+}
+
 h3{
   margin-top:0px;
+  text-align: center;
 }
 
 .navbar {
@@ -69,8 +77,6 @@ h3{
     align-items: center;
 }
 
-
-
 .centered_vision{
   height: 50%;
   display:flex;
@@ -83,11 +89,22 @@ h3{
   color: white;
 }
 
+a.vision_link:hover{
+  color:white;
+}
 .h_line{
   width:100%;
   height:1px;
   background: red;
   margin-bottom: 2.5%;
+}
+
+.h_line_short{
+  width:60%;
+  height:1px;
+  background: red;
+  margin-bottom: 2.5%;
+  margin: auto;
 }
 
 .vision_text{
@@ -149,25 +166,40 @@ h3{
 
   .innovation_container{
     margin-top: 10vh;
+
   }
 
 .end_of_how{
-  border-bottom: solid 1px grey;
 }
 .what_container{
-  height: 100vh;
+
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
 }
 .example_head{
+  margin-top: 1vh;
   text-align:center;
+  height: 5vh;
 }
-.example_format{
+.example_formats_content{
+  margin-top: 3vh;
   height:30vh;
-  border-bottom: solid 1px grey;
+  text-align: justify;
 }
 
-.contact_container{
+.benefits_head{
+  text-align: center;
+  height: 5vh;
+  margin-bottom: 3vh;
+}
+
+.benefits_content{
+  text-align: justify;
+  margin-bottom: 5vh;
+}
+
+
+.last_container{
   height: 100vh;
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
@@ -175,11 +207,11 @@ h3{
 
 .contact_head{
   text-align: center;
-  height: 10vh;
+  height: 5vh;
 }
 
 .contact_info{
-  height: 30vh;
+  height: 20vh;
   margin-top: 5vh;
 }
 
@@ -203,4 +235,22 @@ h3{
 
 .mail_address{
   text-align: left;
+}
+
+.personal_info_head{
+  text-align: center;
+}
+
+.anna_picture{
+  height: 15vh;
+  background-image: url("../pictures/protostart_text_logo.png");
+}
+
+.yannis_picture{
+  height: 15vh;
+  background-image: url("../pictures/protostart_text_logo.png");
+}
+
+.yannis_content{
+  text-align: right;
 }
