@@ -41,7 +41,8 @@ h3{
 
 .text_logo{
   position:absolute;
-  width: 200px;
+  min-width:130px;
+  width: 11vw;
 }
 
 .impressum_link{
@@ -92,11 +93,33 @@ h3{
 a.vision_link:hover{
   color:white;
 }
+
+.link_content{
+  height: 50%;
+  display:flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(220,160,140,0);
+  color: black;
+}
+
+.front_usergroup_link{
+  height: 30vh;
+  background-color: #f8f8f8;
+  display:flex;
+  align-items: center;
+  border-bottom: solid 1px grey;
+}
+
 .h_line{
   width:100%;
   height:1px;
   background: red;
   margin-bottom: 2.5%;
+  padding: 0px;
 }
 
 .h_line_short{
@@ -111,29 +134,10 @@ a.vision_link:hover{
   font-size: 1.3em;
 }
 
-.front_usergroup_link{
-  height: 30vh;
-  background-color: #f8f8f8;
-  display:flex;
-  align-items: center;
-  border-bottom: solid 1px grey;
-}
 
-.link_content{
-  height: 50%;
-  display:flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: rgba(220,160,140,0);
-  color: black;
-}
 
 
 .how_container{
-  height: 100vh;
   background-color: #f8f8f8;
   border-bottom: solid 1px grey;
 }
@@ -143,25 +147,25 @@ a.vision_link:hover{
     text-align: center;
   }
   .plus_container{
-    height: 50vh;
     text-align: center;
   }
 
   .sub_how_container{
     height: 50vh;
+    min-height: fit-content;
   }
   .how_sub_head{
     height:5vh;
     text-align: center;
+    min-height: fit-content;
   }
     .how_sub_picture{
       height: 15vh;
-
     }
-
     .how_sub_content{
       height: 15vh;
-      
+      text-align: justify;
+      min-height: fit-content;
     }
 
   .innovation_container{
@@ -172,7 +176,6 @@ a.vision_link:hover{
 .end_of_how{
 }
 .what_container{
-
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
 }
@@ -180,17 +183,20 @@ a.vision_link:hover{
   margin-top: 1vh;
   text-align:center;
   height: 5vh;
+  min-height: fit-content;
 }
 .example_formats_content{
   margin-top: 3vh;
   height:30vh;
   text-align: justify;
+  min-height: fit-content;
 }
 
 .benefits_head{
   text-align: center;
   height: 5vh;
   margin-bottom: 3vh;
+  min-height: fit-content;
 }
 
 .benefits_content{
@@ -203,16 +209,19 @@ a.vision_link:hover{
   height: 100vh;
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
+  min-height: fit-content;
 }
 
 .contact_head{
   text-align: center;
   height: 5vh;
+  min-height: fit-content;
 }
 
 .contact_info{
   height: 20vh;
   margin-top: 5vh;
+  min-height: fit-content;
 }
 
 .glyphicon_contact{
