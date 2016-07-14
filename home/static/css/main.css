@@ -76,6 +76,7 @@ h3{
     height: 65vh;
     display:flex;
     align-items: center;
+    min-height: fit-content;
 }
 
 .centered_vision{
@@ -88,6 +89,7 @@ h3{
   text-align: center;
   background: rgba(220,160,140,0);
   color: white;
+  min-height: fit-content;
 }
 
 a.vision_link:hover{
@@ -104,6 +106,7 @@ a.vision_link:hover{
   text-align: center;
   background: rgba(220,160,140,0);
   color: black;
+  min-height: fit-content;
 }
 
 .front_usergroup_link{
@@ -112,6 +115,7 @@ a.vision_link:hover{
   display:flex;
   align-items: center;
   border-bottom: solid 1px grey;
+  min-height: fit-content;
 }
 
 .h_line{
@@ -140,11 +144,13 @@ a.vision_link:hover{
 .how_container{
   background-color: #f8f8f8;
   border-bottom: solid 1px grey;
+  min-height: fit-content;
 }
 
   .how_question{
     height: 10vh;
     text-align: center;
+    min-height: fit-content;
   }
   .plus_container{
     text-align: center;
@@ -161,6 +167,7 @@ a.vision_link:hover{
   }
     .how_sub_picture{
       height: 15vh;
+      min-height: fit-content;
     }
     .how_sub_content{
       height: 15vh;
@@ -170,6 +177,7 @@ a.vision_link:hover{
 
   .innovation_container{
     margin-top: 10vh;
+    min-height: fit-content;
 
   }
 
@@ -178,6 +186,7 @@ a.vision_link:hover{
 .what_container{
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
+  min-height: fit-content;
 }
 .example_head{
   margin-top: 1vh;
@@ -202,6 +211,7 @@ a.vision_link:hover{
 .benefits_content{
   text-align: justify;
   margin-bottom: 5vh;
+  min-height: fit-content;
 }
 
 
@@ -231,19 +241,23 @@ a.vision_link:hover{
 .phone_container{
   margin-top: 2vh;
   text-align: right;
+  min-height: fit-content;
 }
 
 .phone_numbers{
   text-align: left;
+  min-height: fit-content;
 }
 
 .mail_container{
   margin-top: 2vh;
   text-align: right;
+  min-height: fit-content;
 }
 
 .mail_address{
   text-align: left;
+  min-height: fit-content;
 }
 
 .personal_info_head{
