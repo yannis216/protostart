@@ -90,8 +90,7 @@ a.vision_link:hover{
 }
 
 .front_usergroup_link{
-  margin-top: 2vh;
-  height: 23vh;
+  height: 25vh;
   background-color: #f8f8f8;
   align-items: center;
   border-bottom: solid 1px grey;
@@ -109,6 +108,7 @@ a.vision_link:hover{
   background: rgba(220,160,140,0);
   color: black;
   min-height: fit-content;
+  max-height: 25vh;
 
 }
 
