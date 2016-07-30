@@ -98,7 +98,6 @@ a.vision_link:hover{
 }
 
 .link_content{
-  height: 50%;
   display:flex;
   -webkit-flex-direction: column;
   flex-direction: column;
@@ -115,7 +114,7 @@ a.vision_link:hover{
 .h_line{
   width:100%;
   height:2px;
-  background: #70BE44;
+  background: #70BF44;
   margin-bottom: 2.5%;
   padding: 0px;
 }
@@ -155,6 +154,9 @@ a.vision_link:hover{
     .how_sub_picture{
       height: 15vh;
       min-height: fit-content;
+      background-image: url("../pictures/health-care.png");
+      background-size: 50%;
+      background-repeat: no-repeat;
     }
     .how_sub_content{
       height: 15vh;
