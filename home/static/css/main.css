@@ -3,7 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-
 a{
   color: grey;
 }
@@ -71,8 +70,8 @@ h3{
 
 
 .jumbo{
-  background-color: black;
-    background: url("../pictures/protostar.jpg");
+    background-color: #f8f8f8;
+    background: url("../pictures/protostar_logo_website.png");
     height: 65vh;
     display:flex;
     align-items: center;
