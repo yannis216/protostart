@@ -23,6 +23,14 @@ h3{
   text-align: center;
 }
 
+ul li{
+    color: black;
+}
+
+ul li span{
+    color: black;
+}
+
 .navbar {
     margin-bottom: 0px;
     height:20vh;
@@ -165,7 +173,7 @@ a.vision_link:hover{
     }
 
   .innovation_container{
-    margin-top: 10vh;
+    margin-top: vh;
     min-height: fit-content;
 
   }
