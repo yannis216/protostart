@@ -18,7 +18,17 @@ a:active{
  color:grey;
 }
 
+
+h1{
+font-size: 2em;
+}
+
+h2{
+font-size: 1.7em;
+}
+
 h3{
+  font-size: 1.5em;
   margin-top:0px;
   text-align: center;
 }
@@ -31,6 +41,10 @@ ul li span{
     color: black;
 }
 
+.glyphicon-chevron-down{
+  color: #70BF44
+}
+/* Anfang erste 100% */
 .navbar {
     margin-bottom: 0px;
     height:20vh;
@@ -39,11 +53,16 @@ ul li span{
 }
 
 .navbar_logo{
-  background-image: url("../pictures/protostart_logo_website.png");
+  /*background-image: url("../pictures/protostart_logo_website.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
   height: 20vh;
+  text-align: center;
+}
+
+.navbar_logo img{
+  height: 100%;
 }
 
 .impressum_link{
@@ -53,7 +72,7 @@ ul li span{
 
 .start_now_button{
   margin-top: 7px;
-  border: solid #ED1A5D 2px;
+  border: solid #70BF44 2px;
   border-radius: 5px;
   background-color: #f8f8f8;
 }
@@ -91,11 +110,9 @@ ul li span{
 }
 
 .vision_text{
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
-a.vision_link:hover{
-  color:white;
-}
+
 
 .front_usergroup_link{
   height: 25vh;
@@ -114,9 +131,6 @@ a.vision_link:hover{
   text-align: center;
   background: rgba(220,160,140,0);
   color: black;
-  min-height: fit-content;
-  max-height: 25vh;
-
 }
 
 .h_line{
@@ -135,6 +149,7 @@ a.vision_link:hover{
   margin: auto;
 }
 
+/* Anfang zweite 100% */
 .how_container{
   background-color: #f8f8f8;
   border-bottom: solid 1px grey;
@@ -162,10 +177,16 @@ a.vision_link:hover{
     .how_sub_picture{
       height: 15vh;
       min-height: fit-content;
-      background-image: url("../pictures/health-care.png");
+      text-align: center;
+    /*  background-image: url("../pictures/health-care.png");
       background-size: 50%;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat; */
     }
+
+.how_sub_picture img{
+  height: 80%;
+}
+
     .how_sub_content{
       height: 15vh;
       text-align: justify;
