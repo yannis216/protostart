@@ -185,6 +185,7 @@ ul li span{
 
 .how_sub_picture img{
   height: 80%;
+  margin-top: 20%;
 }
 
     .how_sub_content{
@@ -211,6 +212,7 @@ ul li span{
   text-align:center;
   height: 5vh;
   min-height: fit-content;
+
 }
 .example_formats_content{
   margin-top: 3vh;
@@ -224,6 +226,7 @@ ul li span{
   height: 5vh;
   margin-bottom: 3vh;
   min-height: fit-content;
+  border-top: solid 1px grey;
 }
 
 .benefits_content{
@@ -233,11 +236,11 @@ ul li span{
 }
 
 
-.last_container{
-  height: 100vh;
+.contact_container{
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
   min-height: fit-content;
+
 }
 
 .contact_head{
@@ -278,6 +281,12 @@ ul li span{
   min-height: fit-content;
 }
 
+
+.whois_container{
+  margin-top: 5vh;
+  background-color: #f8f8f8;
+}
+
 .down_logo{
   height: 20vh ;
 }
@@ -308,6 +317,12 @@ ul li span{
 
 .anna_content{
   text-align: justify;
+}
+
+.end_container{
+ border-top: solid 1px grey;
+ height: 20vh;
+ background-color: #f8f8f8;
 }
 
 .impressum_container{

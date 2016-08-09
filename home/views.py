@@ -6,3 +6,6 @@ def home(request):
 
 def impressum(request):
     return render(request, 'home/impressum.html', {})
+
+def datenschutz(request):
+    return render(request, 'home/datenschutz.html', {})
