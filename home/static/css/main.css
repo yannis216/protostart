@@ -278,6 +278,10 @@ ul li span{
   min-height: fit-content;
 }
 
+.down_logo{
+  height: 20vh ;
+}
+
 .personal_info_head{
   text-align: center;
 }
@@ -287,15 +291,24 @@ ul li span{
   background-image: url("../pictures/protostart_text_logo.png");
 }
 
+.anna_picture_container{
+  text-align: right;
+}
+.yannis_picture_container{
+  text-align: center;
+}
+
 .yannis_picture{
   height: 15vh;
-  background-image: url("../pictures/protostart_text_logo.png");
 }
 
 .yannis_content{
-  text-align: right;
+  text-align: justify;
 }
 
+.anna_content{
+  text-align: justify;
+}
 
 .impressum_container{
 
