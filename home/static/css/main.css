@@ -43,7 +43,7 @@ ul li span{
 }
 
 .glyphicon-chevron-down{
-  color: #70BF44
+  color: #70BF44;
 }
 /* Anfang erste 100% */
 .navbar {
@@ -325,4 +325,7 @@ ul li span{
 }
 
 .impressum_container{
+}
+
+.contact_form{
 }
