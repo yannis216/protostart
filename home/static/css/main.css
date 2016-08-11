@@ -1,6 +1,7 @@
 body {
   height: 100%;
   overflow-x: hidden;
+   background-color: #f8f8f8;
 }
 
 a{
@@ -237,11 +238,8 @@ ul li span{
 
 
 .contact_container{
-  border-bottom: solid 1px grey;
   background-color: #f8f8f8;
-  min-height: fit-content;
-
-}
+  min-height: fit-content;}
 
 .contact_head{
   text-align: center;
@@ -304,7 +302,7 @@ ul li span{
   text-align: right;
 }
 .yannis_picture_container{
-  
+
 }
 
 .yannis_picture{
@@ -321,10 +319,10 @@ ul li span{
 
 .end_container{
  border-top: solid 1px grey;
- height: 20vh;
+ height: 10vh;
  background-color: #f8f8f8;
+ margin-top: 5vh;
 }
 
 .impressum_container{
-
 }
