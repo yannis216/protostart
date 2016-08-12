@@ -62,7 +62,7 @@ ul li span{
   text-align: center;
 }
 
-.navbar_logo img{
+.navbar_logo_img{
   height: 100%;
 }
 
@@ -184,8 +184,8 @@ ul li span{
       background-repeat: no-repeat; */
     }
 
-.how_sub_picture img{
-  height: 80%;
+.how_sub_picture_img{
+  height: 10vh;
   margin-top: 20%;
 }
 
