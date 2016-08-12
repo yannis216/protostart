@@ -66,6 +66,10 @@ ul li span{
   height: 100%;
 }
 
+img.navbar_logo_img{
+  height: 100%;
+}
+
 .impressum_link{
   margin-top: 16px;
   text-align: right;
@@ -185,6 +189,11 @@ ul li span{
     }
 
 .how_sub_picture_img{
+  height: 10vh;
+  margin-top: 20%;
+}
+
+img.how_sub_picture_img{
   height: 10vh;
   margin-top: 20%;
 }
