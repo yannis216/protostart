@@ -1,6 +1,7 @@
 body {
   height: 100%;
   overflow-x: hidden;
+   background-color: #f8f8f8;
 }
 
 a{
@@ -42,7 +43,7 @@ ul li span{
 }
 
 .glyphicon-chevron-down{
-  color: #70BF44
+  color: #70BF44;
 }
 /* Anfang erste 100% */
 .navbar {
@@ -61,9 +62,12 @@ ul li span{
   text-align: center;
 }
 
-.navbar_logo img{
-  height: 100%;
+.navbar_logo_img{
+  max-width:100%;
+  max-height:100%;
 }
+
+
 
 .impressum_link{
   margin-top: 16px;
@@ -183,10 +187,13 @@ ul li span{
       background-repeat: no-repeat; */
     }
 
-.how_sub_picture img{
-  height: 80%;
+.how_sub_picture_img{
+  max-width:100%;
+  max-height:100%;
   margin-top: 20%;
 }
+
+
 
     .how_sub_content{
       height: 15vh;
@@ -237,11 +244,8 @@ ul li span{
 
 
 .contact_container{
-  border-bottom: solid 1px grey;
   background-color: #f8f8f8;
-  min-height: fit-content;
-
-}
+  min-height: fit-content;}
 
 .contact_head{
   text-align: center;
@@ -288,7 +292,12 @@ ul li span{
 }
 
 .down_logo{
-  height: 20vh ;
+  height: 20vh;
+}
+
+.bottom_logo_img{
+  max-width:100%;
+  max-height:100%;
 }
 
 .personal_info_head{
@@ -304,7 +313,7 @@ ul li span{
   text-align: right;
 }
 .yannis_picture_container{
-  text-align: center;
+
 }
 
 .yannis_picture{
@@ -321,10 +330,13 @@ ul li span{
 
 .end_container{
  border-top: solid 1px grey;
- height: 20vh;
+ height: 10vh;
  background-color: #f8f8f8;
+ margin-top: 5vh;
 }
 
 .impressum_container{
+}
 
+.contact_form{
 }
