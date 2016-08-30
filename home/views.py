@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Event
+from django.utils import timezone
 
 # Create your views here.
 def home(request):
@@ -9,3 +11,7 @@ def impressum(request):
 
 def datenschutz(request):
     return render(request, 'home/datenschutz.html', {})
+
+def events(request):
+    events= Event.objects.all().order_by('start_date')
+    return render(request, 'home/events.html', {'events': events})

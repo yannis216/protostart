@@ -1,0 +1,51 @@
+{% extends 'home/base.html' %}
+{% block content %}
+
+
+<div class="row events_container_row">
+  <div class="col-md-8 col-md-offset-2 events_container">
+    <div class="row">
+      <div class="events_heading">
+        <h1>Alle Events</h1>
+      </div>
+    </div>
+<!-- Anfang Iteration durch Events -->
+    {% for event in events %}
+    <div class="row">
+      <div class="col-md-12 event_container">
+        <h2>{{ event.title }} </h2>
+        <div class="h_line">&nbsp</div>
+        <div class="row">
+          <div class="col-md-2 event_questions">
+          Wo?
+          </div>
+          <div class="col-md-10 event_content">
+            {{ event.location }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 event_questions">
+          Wann?
+          </div>
+          <div class="col-md-10 event_content">
+            {{ event.start_date }} bis {{ event.end_date}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 event_questions">
+          Was genau?
+          </div>
+          <div class="col-md-10 event_content">
+            {{event.description}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+
+{% endblock %}

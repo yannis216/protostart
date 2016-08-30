@@ -339,3 +339,19 @@ ul li span{
 
 .contact_form{
 }
+
+
+/*Ab hier: Styles für Alle Events */
+
+.event_container{
+}
+
+.event_questions{
+  font-size: 1,2em;
+  font-weight: bold;
+  min-width: fit-content;
+}
+
+.event_content{
+  min-width: fit-content;
+}
