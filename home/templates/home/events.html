@@ -6,37 +6,31 @@
   <div class="col-md-8 col-md-offset-2 events_container">
     <div class="row">
       <div class="events_heading">
-        <h1>Alle Events</h1>
+        <h1>Nächste Veranstaltungen</h1>
+        <div class="h_line">&nbsp</div>
       </div>
     </div>
-<!-- Anfang Iteration durch Events -->
-    {% for event in events %}
+<!-- Anfang Iteration durch zukünftige Events -->
+    {% for event in future_events %}
     <div class="row">
       <div class="col-md-12 event_container">
-        <h2>{{ event.title }} </h2>
-        <div class="h_line">&nbsp</div>
         <div class="row">
-          <div class="col-md-2 event_questions">
-          Wo?
+          <div class="col-md-3">
+            <img class="event_picture" src="../static/pictures/events/{{ event.logo }}" alt="" />
           </div>
-          <div class="col-md-10 event_content">
-            {{ event.location }}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 event_questions">
-          Wann?
-          </div>
-          <div class="col-md-10 event_content">
-            {{ event.start_date }} bis {{ event.end_date}}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 event_questions">
-          Was genau?
-          </div>
-          <div class="col-md-10 event_content">
-            {{event.description}}
+          <div class="col-md-9 event_content">
+            <div class="row">
+              <h2>{{ event.title }} </h2>
+            </div>
+            <div class="row">
+              {{ event.location }}
+            </div>
+            <div class="row">
+              Beginn: {{ event.start_date }}
+            </div>
+            <div class="row">
+              {{event.description}}
+            </div>
           </div>
         </div>
       </div>
