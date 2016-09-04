@@ -135,6 +135,8 @@ ul li span{
   text-align: center;
   background: rgba(220,160,140,0);
   color: black;
+  min-height: fit-content;
+  margin-top: 1px;
 }
 
 .h_line{
@@ -161,20 +163,15 @@ ul li span{
 }
 
   .how_question{
-    height: 10vh;
     text-align: center;
     min-height: fit-content;
-  }
-  .plus_container{
-    text-align: center;
+    margin-bottom: 10px;
   }
 
   .sub_how_container{
-    height: 50vh;
     min-height: fit-content;
   }
   .how_sub_head{
-    height:5vh;
     text-align: center;
     min-height: fit-content;
   }
@@ -193,10 +190,7 @@ ul li span{
   margin-top: 20%;
 }
 
-
-
     .how_sub_content{
-      height: 15vh;
       text-align: justify;
       min-height: fit-content;
     }
@@ -204,11 +198,11 @@ ul li span{
   .innovation_container{
     margin-top: vh;
     min-height: fit-content;
-
   }
 
 .end_of_how{
 }
+
 .what_container{
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
