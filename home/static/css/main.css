@@ -135,8 +135,6 @@ ul li span{
   text-align: center;
   background: rgba(220,160,140,0);
   color: black;
-  min-height: fit-content;
-  margin-top: 1px;
 }
 
 .h_line{
@@ -198,11 +196,11 @@ ul li span{
   .innovation_container{
     margin-top: vh;
     min-height: fit-content;
+
   }
 
 .end_of_how{
 }
-
 .what_container{
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
