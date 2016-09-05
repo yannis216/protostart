@@ -19,17 +19,17 @@
             <img class="event_picture" src="../static/pictures/events/{{ event.logo }}" alt="" />
           </div>
           <div class="col-md-9 event_content">
-            <div class="row">
+            <div class="row" id="{{ event.title }}">
               <h2>{{ event.title }} </h2>
             </div>
             <div class="row">
-              {{ event.location }}
+              <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
             </div>
             <div class="row">
-              Beginn: {{ event.start_date }}
+              <span class="glyphicon glyphicon-time" aria-hidden="true"></span>   {{ event.start_date }}
             </div>
             <div class="row">
-              {{event.description}}
+              <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description}}
             </div>
           </div>
         </div>

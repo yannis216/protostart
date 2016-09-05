@@ -4,7 +4,8 @@ from django.utils import timezone
 
 # Create your views here.
 def home(request):
-    return render(request, 'home/front_page.html', {})
+    front_events=Event.objects.all().order_by('start_date')
+    return render(request, 'home/front_page.html', {'front_events': front_events})
 
 def impressum(request):
     return render(request, 'home/impressum.html', {})
