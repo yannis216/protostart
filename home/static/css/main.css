@@ -193,20 +193,17 @@ ul li span{
 .example_head{
   margin-top: 1vh;
   text-align:center;
-  height: 5vh;
   min-height: fit-content;
 
 }
 .formats_content{
   margin-top: 3vh;
-  height:30vh;
   text-align: justify;
   min-height: fit-content;
 }
 
 .benefits_head{
   text-align: center;
-  height: 7vh;
   margin-bottom: 1vh;
   min-height: fit-content;
   border-top: solid 1px grey;
@@ -215,7 +212,6 @@ ul li span{
 .benefits_content{
   text-align: justify;
   margin-bottom: 5vh;
-  height: 50vh;
   min-height: fit-content;
 }
 
@@ -227,7 +223,6 @@ ul li span{
 
 .contact_head{
   text-align: center;
-  height: 5vh;
   min-height: fit-content;
 }
 
@@ -235,6 +230,7 @@ ul li span{
   height: 20vh;
   margin-top: 5vh;
   min-height: fit-content;
+  margin-bottom: 10px;
 }
 
 .glyphicon_contact{
