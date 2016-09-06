@@ -1,7 +1,6 @@
 body {
-  height: 100%;
   overflow-x: hidden;
-   background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 
 a{
@@ -18,7 +17,6 @@ a:visited{
 a:active{
  color:grey;
 }
-
 
 h1{
 font-size: 2em;
@@ -48,7 +46,6 @@ ul li span{
 /* Anfang erste 100% */
 .navbar {
     margin-bottom: 0px;
-    height:20vh;
     border:none;
     background-color: #f8f8f8;
 }
