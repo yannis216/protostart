@@ -279,6 +279,7 @@ ul li span{
 }
 
 .anna_picture{
+  max-height: 300px;
 }
 
 .anna_picture_container{
@@ -289,6 +290,7 @@ ul li span{
 }
 
 .yannis_picture{
+  max-height: 300px;
 }
 
 .yannis_content{
