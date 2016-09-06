@@ -150,27 +150,20 @@ ul li span{
 .how_container{
   background-color: #f8f8f8;
   border-bottom: solid 1px grey;
-  min-height: fit-content;
 }
 
   .how_question{
     text-align: center;
-    min-height: fit-content;
     margin-bottom: 10px;
   }
 
   .sub_how_container{
-    min-height: fit-content;
   }
-  .how_sub_head{
-    text-align: center;
-    height: 7vh;
-    min-height: fit-content;
-  }
+
     .how_sub_picture{
       height: 15vh;
-      min-height: fit-content;
       text-align: center;
+      margin-bottom: 5vh;
     /*  background-image: url("../pictures/health-care.png");
       background-size: 50%;
       background-repeat: no-repeat; */
@@ -179,17 +172,14 @@ ul li span{
       .how_sub_picture_img{
         max-width:100%;
         max-height:100%;
-        margin-top: 20%;
 }
 
     .how_sub_content{
       text-align: justify;
       height: 15vh;
-      min-height: fit-content;
     }
 
   .innovation_container{
-    min-height: fit-content;
   }
 
 .end_of_how{
@@ -197,7 +187,6 @@ ul li span{
 .what_container{
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
-  min-height: fit-content;
 }
 .example_head{
   margin-top: 1vh;
