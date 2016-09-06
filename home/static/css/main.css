@@ -177,6 +177,7 @@ ul li span{
     .how_sub_content{
       text-align: justify;
       height: 15vh;
+      margin-bottom: 1px;
     }
 
   .innovation_container{
