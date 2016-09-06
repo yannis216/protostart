@@ -127,7 +127,6 @@ ul li span{
   text-align: center;
   background: rgba(220,160,140,0);
   color: black;
-  height: 25vh;
   min-height: fit-content;
 }
 
@@ -165,7 +164,7 @@ ul li span{
       text-align: center;
       margin-bottom: 3vh;
       min-height: fit-content;
-      max-height: 20vh;
+      max-height: 15vh;
     /*  background-image: url("../pictures/health-care.png");
       background-size: 50%;
       background-repeat: no-repeat; */
@@ -173,7 +172,7 @@ ul li span{
 
       .how_sub_picture_img{
         max-width:100%;
-        max-height:30vh;
+        max-height:15vh;
 }
 
     .how_sub_content{
@@ -228,7 +227,6 @@ ul li span{
 }
 
 .contact_info{
-  height: 20vh;
   margin-top: 5vh;
   min-height: fit-content;
   margin-bottom: 10px;
