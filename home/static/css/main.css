@@ -105,13 +105,11 @@ ul li span{
   background: rgba(248,248,248,0.8);
   min-height: fit-content;
   border-radius: 20px;
-
 }
 
 .vision_text{
   font-size: 1.1em;
 }
-
 
 .front_usergroup_link{
   background-color: #f8f8f8;
@@ -166,6 +164,7 @@ ul li span{
   }
   .how_sub_head{
     text-align: center;
+    height: 7vh;
     min-height: fit-content;
   }
     .how_sub_picture{
@@ -177,21 +176,20 @@ ul li span{
       background-repeat: no-repeat; */
     }
 
-.how_sub_picture_img{
-  max-width:100%;
-  max-height:100%;
-  margin-top: 20%;
+      .how_sub_picture_img{
+        max-width:100%;
+        max-height:100%;
+        margin-top: 20%;
 }
 
     .how_sub_content{
       text-align: justify;
+      height: 15vh;
       min-height: fit-content;
     }
 
   .innovation_container{
-    margin-top: vh;
     min-height: fit-content;
-
   }
 
 .end_of_how{
@@ -208,7 +206,7 @@ ul li span{
   min-height: fit-content;
 
 }
-.example_formats_content{
+.formats_content{
   margin-top: 3vh;
   height:30vh;
   text-align: justify;
@@ -217,8 +215,8 @@ ul li span{
 
 .benefits_head{
   text-align: center;
-  height: 5vh;
-  margin-bottom: 3vh;
+  height: 7vh;
+  margin-bottom: 1vh;
   min-height: fit-content;
   border-top: solid 1px grey;
 }
@@ -226,6 +224,7 @@ ul li span{
 .benefits_content{
   text-align: justify;
   margin-bottom: 5vh;
+  height: 50vh;
   min-height: fit-content;
 }
 
