@@ -64,8 +64,6 @@ ul li span{
   max-height:100%;
 }
 
-
-
 .impressum_link{
   margin-top: 16px;
   text-align: right;
@@ -116,7 +114,7 @@ ul li span{
 
 
 .front_usergroup_link{
-  height: 25vh;
+
   background-color: #f8f8f8;
   align-items: center;
   border-bottom: solid 1px grey;
@@ -124,6 +122,7 @@ ul li span{
 }
 
 .link_content{
+  height: 25vh;
   display:flex;
   -webkit-flex-direction: column;
   flex-direction: column;
@@ -184,6 +183,7 @@ ul li span{
   max-width:100%;
   max-height:100%;
   margin-top: 20%;
+  min-height: fit-content;
 }
 
     .how_sub_content{
@@ -235,7 +235,8 @@ ul li span{
 
 .contact_container{
   background-color: #f8f8f8;
-  min-height: fit-content;}
+  min-height: fit-content;
+}
 
 .contact_head{
   text-align: center;
