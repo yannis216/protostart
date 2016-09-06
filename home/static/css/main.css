@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   background-color: #f8f8f8;
+  width: -webkit-calc(100% - 0px);
 }
 
 a{
