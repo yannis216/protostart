@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from .models import Event
 from django.utils import timezone
+import datetime
 
 # Create your views here.
 def home(request):
-    front_events=Event.objects.all().order_by('start_date')
+    front_events=Event.objects.filter(end_date__gte=datetime.date.today()).order_by('start_date')
     return render(request, 'home/front_page.html', {'front_events': front_events})
 
 def impressum(request):
@@ -14,5 +15,6 @@ def datenschutz(request):
     return render(request, 'home/datenschutz.html', {})
 
 def events(request):
-    future_events= Event.objects.all().order_by('start_date')
-    return render(request, 'home/events.html', {'future_events': future_events})
+    future_events= Event.objects.filter(end_date__gte=datetime.date.today()).order_by('start_date')
+    past_events=Event.objects.filter(end_date__lte=datetime.date.today()).order_by('start_date')
+    return render(request, 'home/events.html', {'future_events': future_events, 'past_events': past_events})

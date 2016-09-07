@@ -26,7 +26,45 @@
               <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
             </div>
             <div class="row">
-              <span class="glyphicon glyphicon-time" aria-hidden="true"></span>   {{ event.start_date }}
+              <span class="glyphicon glyphicon-time" aria-hidden="true"></span>   {{ event.start_date|date:"G:i" }} h, {{ event.start_date|date:"j.n.Y" }}
+            </div>
+            {% if event.eventbrite_link %}
+            <div class="row">
+              <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>   <a href="{{ event.eventbrite_link }}">Teilnahme sichern auf Eventbrite</a>
+            </div>
+            {% endif%}
+            <div class="row">
+              <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description|truncatewords:100}} HIERLINK ZU DETAIL EINFÜGEN
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+<!-- Ende zukünftige Veranstaltungen -->
+<!-- Anfang VErgangene Veranstaltungen -->
+    <div class="row">
+      <div class="events_heading">
+        <h1>Vergangene Veranstaltungen</h1>
+        <div class="h_line">&nbsp</div>
+      </div>
+    </div>
+    {% for event in past_events %}
+    <div class="row">
+      <div class="col-md-12 event_container">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="event_picture" src="../static/pictures/events/{{ event.logo }}" alt="" />
+          </div>
+          <div class="col-md-9 event_content">
+            <div class="row" id="{{ event.title }}">
+              <h2>{{ event.title }} </h2>
+            </div>
+            <div class="row">
+              <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
+            </div>
+            <div class="row">
+              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>   {{ event.start_date|date:"j.n.Y" }}
             </div>
             <div class="row">
               <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description}}
@@ -36,10 +74,7 @@
       </div>
     </div>
     {% endfor %}
+<!-- Ende Vergangene VEranstaltungen -->
   </div>
 </div>
-
-
-
-
 {% endblock %}

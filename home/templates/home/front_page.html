@@ -63,7 +63,7 @@
 <div class="row">
   <div class="col-md-12 front_events_container" id="events">
     <div class="col-md-12 front_events_header">
-      <h2>Veranstaltungen</h2>
+      <h2>Kommende Veranstaltungen</h2>
     </div>
     {% for event in front_events %}
     <div class="col-md-3 front_event">
@@ -78,14 +78,14 @@
           <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>  {{ event.location }}
         </div>
         <div class="row">
-          <span class="glyphicon glyphicon-time" aria-hidden="true"></span>  {{ event.start_date }}
+          <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>   {{ event.start_date|date:"j.n.Y" }}
         </div>
       </div>
     </div>
     {% endfor %}
     <div class="col-md-12 link_content link_allevents">
       <a href="/events">
-        Alle unsere Veranstaltungen hier im Überblick >> </br></br>
+        Alle unsere Veranstaltungen hier im Überblick >> </br></br></br>
       </a>
     </div>
   </div>
