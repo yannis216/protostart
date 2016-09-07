@@ -1,7 +1,6 @@
 body {
   overflow-x: hidden;
   background-color: #f8f8f8;
-  width: -webkit-calc(100% - 0px);
 }
 
 a{
@@ -65,6 +64,8 @@ ul li span{
   max-height:100%;
 }
 
+
+
 .impressum_link{
   margin-top: 16px;
   text-align: right;
@@ -106,16 +107,20 @@ ul li span{
   background: rgba(248,248,248,0.8);
   min-height: fit-content;
   border-radius: 20px;
+
 }
 
 .vision_text{
   font-size: 1.1em;
 }
 
+
 .front_usergroup_link{
+  height: 25vh;
   background-color: #f8f8f8;
   align-items: center;
   border-bottom: solid 1px grey;
+  min-height: fit-content;
 }
 
 .link_content{
@@ -127,7 +132,6 @@ ul li span{
   text-align: center;
   background: rgba(220,160,140,0);
   color: black;
-  min-height: fit-content;
 }
 
 .h_line{
@@ -146,67 +150,50 @@ ul li span{
   margin: auto;
 }
 
-/*Anfang Events */
-.front_events_header{
-  text-align: center;
-}
-.front_events_container{
-  border-bottom: 1px solid grey;
-  min-height: fit-content;
-}
-.front_event{
-}
-
-
-.front_event_picture{
-  max-width:100%;
-  max-height:100%;
-  margin-top: 20px;
-  margin-bottom: 5%;
-}
-
-.link_allevents{
-  margin-top: 20px;
-}
-
-
-
-/* Anfang Kernelemente unserer Arbeit */
+/* Anfang zweite 100% */
 .how_container{
   background-color: #f8f8f8;
   border-bottom: solid 1px grey;
+  min-height: fit-content;
 }
 
   .how_question{
     text-align: center;
+    min-height: fit-content;
     margin-bottom: 10px;
   }
 
   .sub_how_container{
+    min-height: fit-content;
   }
-
+  .how_sub_head{
+    text-align: center;
+    min-height: fit-content;
+  }
     .how_sub_picture{
-      text-align: center;
-      margin-bottom: 3vh;
+      height: 15vh;
       min-height: fit-content;
-      max-height: 15vh;
+      text-align: center;
     /*  background-image: url("../pictures/health-care.png");
       background-size: 50%;
       background-repeat: no-repeat; */
     }
 
-      .how_sub_picture_img{
-        max-width:100%;
-        max-height:15vh;
+.how_sub_picture_img{
+  max-width:100%;
+  max-height:100%;
+  margin-top: 20%;
 }
 
     .how_sub_content{
       text-align: justify;
-      margin-bottom: 1px;
       min-height: fit-content;
     }
 
   .innovation_container{
+    margin-top: vh;
+    min-height: fit-content;
+
   }
 
 .end_of_how{
@@ -214,22 +201,26 @@ ul li span{
 .what_container{
   border-bottom: solid 1px grey;
   background-color: #f8f8f8;
+  min-height: fit-content;
 }
 .example_head{
   margin-top: 1vh;
   text-align:center;
+  height: 5vh;
   min-height: fit-content;
 
 }
-.formats_content{
+.example_formats_content{
   margin-top: 3vh;
+  height:30vh;
   text-align: justify;
   min-height: fit-content;
 }
 
 .benefits_head{
   text-align: center;
-  margin-bottom: 1vh;
+  height: 5vh;
+  margin-bottom: 3vh;
   min-height: fit-content;
   border-top: solid 1px grey;
 }
@@ -243,18 +234,18 @@ ul li span{
 
 .contact_container{
   background-color: #f8f8f8;
-  min-height: fit-content;
-}
+  min-height: fit-content;}
 
 .contact_head{
   text-align: center;
+  height: 5vh;
   min-height: fit-content;
 }
 
 .contact_info{
+  height: 20vh;
   margin-top: 5vh;
   min-height: fit-content;
-  margin-bottom: 10px;
 }
 
 .glyphicon_contact{
@@ -290,7 +281,7 @@ ul li span{
 }
 
 .down_logo{
-  height: 200px;
+  height: 20vh;
 }
 
 .bottom_logo_img{
@@ -303,7 +294,7 @@ ul li span{
 }
 
 .anna_picture{
-  max-height: 20vh;
+  height: 15vh;
 }
 
 .anna_picture_container{
@@ -314,7 +305,7 @@ ul li span{
 }
 
 .yannis_picture{
-  max-height: 20vh;
+  height: 15vh;
 }
 
 .yannis_content{
@@ -336,23 +327,4 @@ ul li span{
 }
 
 .contact_form{
-}
-
-
-/*Ab hier: Styles für Alle Events */
-
-.event_container{
-  border-bottom: solid 1px grey;
-}
-
-.event_picture{
-  max-width:100%;
-  max-height:100%;
-  margin-top: 20px;
-  margin-bottom: 5%;
-}
-
-.event_content{
-  min-height: fit-content;
-  margin-bottom: 5%;
 }
