@@ -3,7 +3,6 @@ from .models import Event
 from django.utils import timezone
 
 # Create your views here.
-@xframe_options_exempt
 def home(request):
     front_events=Event.objects.all().order_by('start_date')
     return render(request, 'home/front_page.html', {'front_events': front_events})
