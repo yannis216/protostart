@@ -20,7 +20,7 @@
           </div>
           <div class="col-md-9 event_content">
             <div class="row" id="{{ event.title }}">
-              <h2>{{ event.title }} </h2>
+              <h2><a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a></h2>
             </div>
             <div class="row">
               <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
@@ -58,7 +58,7 @@
           </div>
           <div class="col-md-9 event_content">
             <div class="row" id="{{ event.title }}">
-              <h2>{{ event.title }} </h2>
+              <h2><a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a> </h2>
             </div>
             <div class="row">
               <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
