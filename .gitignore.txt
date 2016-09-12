@@ -1,0 +1,5 @@
+home/*.pyc
+home/__pycache__
+protosite/__pycache__
+db.sqlite3
+.DS_Store
