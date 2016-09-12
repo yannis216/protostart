@@ -5,7 +5,7 @@ import datetime
 
 # Create your views here.
 def home(request):
-    front_events=Event.objects.filter(end_date__gte=datetime.date.today()).order_by('start_date')
+    front_events=Event.objects.filter(end_date__gte=datetime.date.today()).order_by('start_date')[:4]
     return render(request, 'home/front_page.html', {'front_events': front_events})
 
 def impressum(request):

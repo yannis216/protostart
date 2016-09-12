@@ -34,7 +34,7 @@
             </div>
             {% endif%}
             <div class="row">
-              <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description|truncatewords:100}} HIERLINK ZU DETAIL EINFÜGEN
+              <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description|truncatewords:100}} <a href="{% url 'event_detail' pk=event.pk %}">Mehr Erfahren</a>
             </div>
           </div>
         </div>
