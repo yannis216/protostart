@@ -5,7 +5,7 @@
 <div class="row events_container_row">
   <div class="col-md-8 col-md-offset-2 events_container">
     <div class="row">
-      <div class="events_heading">
+      <div class="col-md-12 events_heading">
         <h1>Nächste Veranstaltungen</h1>
         <div class="h_line">&nbsp</div>
       </div>
@@ -16,25 +16,35 @@
       <div class="col-md-12 event_container">
         <div class="row">
           <div class="col-md-3">
-            <img class="event_picture" src="../static/pictures/events/{{ event.logo }}" alt="" />
+            <img class="event_picture" src="../static/pictures/events/logos/{{ event.logo }}" alt="" />
           </div>
           <div class="col-md-9 event_content">
             <div class="row" id="{{ event.title }}">
-              <h2><a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a></h2>
+              <div class="col-md-12">
+                <h2><a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a></h2>
+              </div>
             </div>
             <div class="row">
-              <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
+              <div class="col-md-12">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
+              </div>
             </div>
             <div class="row">
-              <span class="glyphicon glyphicon-time" aria-hidden="true"></span>   {{ event.start_date|date:"G:i" }} h, {{ event.start_date|date:"j.n.Y" }}
+              <div class="col-md-12">
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>   {{ event.start_date|date:"G:i" }} h, {{ event.start_date|date:"j.n.Y" }}
+              </div>
             </div>
             {% if event.eventbrite_link %}
             <div class="row">
-              <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>   <a href="{{ event.eventbrite_link }}">Teilnahme sichern auf Eventbrite</a>
+              <div class="col-md-12">
+                <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>   <a href="{{ event.eventbrite_link }}">Teilnahme sichern auf Eventbrite</a>
+              </div>
             </div>
             {% endif%}
             <div class="row">
-              <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description|truncatewords:100}} <a href="{% url 'event_detail' pk=event.pk %}">Mehr Erfahren</a>
+              <div class="col-md-12">
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description|truncatewords:100}} <a href="{% url 'event_detail' pk=event.pk %}">Mehr Erfahren</a>
+              </div>
             </div>
           </div>
         </div>
@@ -44,7 +54,7 @@
 <!-- Ende zukünftige Veranstaltungen -->
 <!-- Anfang VErgangene Veranstaltungen -->
     <div class="row">
-      <div class="events_heading">
+      <div class="col-md-12 events_heading">
         <h1>Vergangene Veranstaltungen</h1>
         <div class="h_line">&nbsp</div>
       </div>
@@ -54,20 +64,28 @@
       <div class="col-md-12 event_container">
         <div class="row">
           <div class="col-md-3">
-            <img class="event_picture" src="../static/pictures/events/{{ event.logo }}" alt="" />
+            <img class="event_picture" src="../static/pictures/events/logos/{{ event.logo }}" alt="" />
           </div>
           <div class="col-md-9 event_content">
             <div class="row" id="{{ event.title }}">
-              <h2><a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a> </h2>
+              <div class="col-md-12">
+                <h2><a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a> </h2>
+              </div>
             </div>
             <div class="row">
-              <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
+              <div class="col-md-12">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
+              </div>
             </div>
             <div class="row">
-              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>   {{ event.start_date|date:"j.n.Y" }}
+              <div class="col-md-12">
+                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>   {{ event.start_date|date:"j.n.Y" }}
+              </div>
             </div>
             <div class="row">
-              <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description}}
+              <div class="col-md-12">
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description}}
+              </div>
             </div>
           </div>
         </div>

@@ -4,38 +4,61 @@
 
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <a href="/events">
-      << Zurück zu allen Veranstaltungen</br></br></br>
-    </a>
+    <div class="col-md-12">
+      <a href="/events">
+        << Zurück zu allen Veranstaltungen</br>
+      </a>
       <div class="row">
-        <div class="col-md-3">
-          <img class="event_picture" src="../static/pictures/events/{{ event.logo }}" alt="" />
+        <div class="cold-md-12 event_header_picture" style='background:url(../static/pictures/events/header/{{ event.header }})'>
         </div>
-        <div class="col-md-9 event_content">
-          <div class="row event_detail_header" id="{{ event.title }}">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row event_detail_header" id="{{ event.title }}">
+          <div class="col-md-12">
             <h2>{{ event.title }}</h2>
           </div>
-          <div class="row">
+        </div>
+        <div class="row">
+          <div class="col-md-12">
             <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   {{ event.location }}
           </div>
-          <div class="row">
+        </div>
+        <div class="row">
+          <div class="col-md-12">
             <span class="glyphicon glyphicon-time" aria-hidden="true"></span>   {{ event.start_date|date:"G:i" }} h, {{ event.start_date|date:"j.n.Y" }}
           </div>
-          {% if event.eventbrite_link %}
-          <div class="row">
+        </div>
+        {% if event.eventbrite_link %}
+        <div class="row">
+          <div class="col-md-12">
             <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>   <a href="{{ event.eventbrite_link }}">Teilnahme sichern auf Eventbrite</a>
           </div>
-          {% endif%}
-          {% if event.facebook_link %}
-          <div class="row">
-            <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>   <a href="{{ event.facebook_link }}">Die Veranstaltung auf Facebook ansehen</a>
+        </div>
+        {% endif%}
+        {% if event.facebook_link %}
+        <div class="row">
+          <div class="col-md-12">
+            <img class="fb_logo" src="../static/pictures/fb_logo.png" alt="" />   <a href="{{ event.facebook_link }}">Die Veranstaltung auf Facebook ansehen</a>
           </div>
-          {% endif%}
-          <div class="row">
+        </div>
+        {% endif%}
+        <div class="row">
+          <div class="col-md-12">
             <span class="glyphicon glyphicon-book" aria-hidden="true"></span>   {{event.description}}
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-3">
+            <!-- Platzhalter Coop Partner -->
+          </div>
+          <div class="col-md-3">
+            <!-- Platzhalter Dokumentation -->
+          </div>
+        </div>
       </div>
+    </div>
 
 
   </div>

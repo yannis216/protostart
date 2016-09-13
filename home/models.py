@@ -11,8 +11,10 @@ class Event(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     cooperation_partners = models.TextField(blank=True, help_text="Für eventuelle Partner wie die mitorganisierende Hochschule")
     logo = models.CharField(max_length=100, default="protostart_logo_website-min.png", help_text="Den Dateinamen des zu verwendenen Bildes, mit Endung wie .jpg hier einfügen und das Bild dann mit Angabe der betreffenden Veranstaltung an Yannis senden")
+    header =  models.CharField(max_length=100, default="postitwand-min.jpg", help_text="Muss in Format 1920px*1080px abgelegt werden. Dieses Bild wird in der Event Detailansicht als Titelbild (Wie das Titelbild bei Eventbrite) verwendet. Den Dateinamen des zu verwendenen Bildes, mit Endung wie .jpg hier einfügen und das Bild dann mit Angabe der betreffenden Veranstaltung an Yannis senden")
     eventbrite_link = models.CharField(max_length=200, blank=True, help_text="Den gesamten Eventbrite Link, über den Besucher auf das Event kommen hier einfügen")
     facebook_link = models.CharField(max_length=200, blank=True, help_text="Den gesamten Facebook Link, über den Besucher auf das Event kommen hier einfügen")
+
 
     def __str__(self):
         return self.title
