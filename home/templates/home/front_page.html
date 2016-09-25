@@ -18,7 +18,7 @@
   </div>
 <!--drei kleine subkategorien -->
   <div class="row front_usergroup_link">
-    <div class="col-md-4 ">
+    <div class="col-md-3 ">
       <div class="col-md-10 col-md-offset-1 link_content">
         <h2>Formate</h2>
         <div class="h_line">&nbsp</div>
@@ -28,7 +28,7 @@
           </a>
       </div>
     </div>
-    <div class="col-md-4" >
+    <div class="col-md-3" >
         <div class="col-md-10 col-md-offset-1 link_content">
           <h2>Vorteile</h2>
           <div class="h_line">&nbsp</div>
@@ -38,7 +38,17 @@
             </a>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
+        <div class="col-md-10 col-md-offset-1 link_content">
+          <h2>Veranstaltungen</h2>
+          <div class="h_line">&nbsp</div>
+          <a href="#events" class="smoothScroll">
+            Mehr erfahren</br>
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+          </a>
+        </div>
+    </div>
+    <div class="col-md-3">
         <div class="col-md-10 col-md-offset-1 link_content">
           <h2>Kontakt</h2>
           <div class="h_line">&nbsp</div>
@@ -49,6 +59,38 @@
         </div>
     </div>
   </div>
+<!-- Anfang Eventübersicht -->
+<div class="row">
+  <div class="col-md-12 front_events_container" id="events">
+    <div class="col-md-12 front_events_header">
+      <h2>Kommende Veranstaltungen</h2>
+    </div>
+    {% for event in front_events %}
+    <div class="col-md-3 front_event">
+      <div class="col-md-4">
+        <img class="front_event_picture" src="../static/pictures/events/logos/{{ event.logo }}" alt="" />
+      </div>
+      <div class="col-md-8 front_event_content">
+        <div class="row">
+          <h4><a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a></h4>
+        </div>
+        <div class="row">
+          <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>  {{ event.location }}
+        </div>
+        <div class="row">
+          <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>   {{ event.start_date|date:"j.n.Y" }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="col-md-12 link_content link_allevents">
+      <a href="/events">
+        Alle unsere Veranstaltungen hier im Überblick >> </br></br></br>
+      </a>
+    </div>
+  </div>
+</div>
+
 
 <!--Anfang wie machen wir das -->
 <div class="row end_of_how">
@@ -186,7 +228,7 @@
             </div>
           </div>
         </div>
-<!-- Anfang Benefits Subgruppen -->
+<!-- Anfang Benefits Subgruppen --> 
     <div class="row">
       <div class="col-md-12 benefits_head" id="benefits">
         <h2>Ihre Vorteile</h2>
@@ -326,7 +368,6 @@ Heute nutzt er Design Thinking, um innovative Lösungen zu entwickeln und andere
         <a href="https://de.linkedin.com/in/anna-abelein-215670116" style="text-decoration:none;"><span><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="Anna Abelein bei Linkedin" style="vertical-align:middle;" border="0">&nbsp;Anna Abelein bei Linkedin</span></a> </br>
         <a href="https://de.linkedin.com/pub/yannis-beuke/116/1a7/744" style="text-decoration:none;"><span><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="Yannis Beuke bei Linkedin" style="vertical-align:middle;" border="0">&nbsp;Yannis Beuke bei Linkedin</span></a>
       </br></br>
-      <div class="fb-like" data-href="https://www.facebook.com/protostart/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div><a href="https://www.facebook.com/protostart/"> Folgen Sie uns auf Facebook</a>
       </div>
     </div>
 <!-- Anfang Kontakformular -->

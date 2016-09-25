@@ -27,7 +27,6 @@
 <script type="text/javascript">
     window.cookieconsent_options = {"message":"Diese Webseite nutzt Cookies, um Ihnen die bestmögliche Erfahrung zu bieten.","dismiss":"Ok!","learnMore":"More info","link":null,"theme":"dark-bottom"};
 </script>
-
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
 <!-- End Cookie Consent plugin -->
   </head>
@@ -49,7 +48,10 @@
   {% endblock %}
 
 <div class="row end_container">
-  <div class="col-md-6 col-md-offset-6 bottom_links_container">
+  <div class="col-md-2 col-md-offset-5 impressum_link">
+    <div class="fb-like" data-href="https://www.facebook.com/protostart/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div><a href="https://www.facebook.com/protostart/"> Folgen Sie uns auf Facebook</a>
+  </div>
+  <div class="col-md-4 col-md-offset-1 bottom_links_container">
     <div class="col-md-2 col-md-offset-6  impressum_link">
       <a class="" href="{% url 'impressum' %}">
         Impressum
@@ -61,7 +63,6 @@
       </a>
     </div>
   </div>
-
 </div>
 
 
